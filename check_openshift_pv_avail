@@ -227,7 +227,7 @@ filter_volumes() {
     # FIXME: Don't use string comparison to compare quantities
     jqfilter+=" | select(.spec.capacity.storage == \"$capacity\")"
   fi
-  for class in ${opt_ignore_storageclass[@]}; do
+  for class in ${opt_ignore_storageclass[@]+"${opt_ignore_storageclass[@]}"}; do
     jqfilter+=" | select(.spec.storageClassName != \"$class\")"
   done
   jqfilter+=']'
