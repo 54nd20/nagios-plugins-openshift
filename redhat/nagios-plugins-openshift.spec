@@ -55,11 +55,11 @@ make 'LIBDIR=%{_libdir}' 'DATADIR=%{_datadir}'
 %{_datadir}/icinga2/include/plugins-contrib.d/*.conf
 
 %changelog
-* Mon Jun 8 2020 Sandro Kaspar <sandro.kaspar@vshn.ch 0.18.14-1
+* Mon Jun 8 2020 Sandro Kaspar <sandro.kaspar@vshn.ch> 0.18.14-1
 - check_openshift_pv_avail:
   - Add option to ignore entire storageclasses.
 
-* Tue Oct 1 2019 Manuel Hutter <manuel@vshn.ch 0.18.13-1
+* Tue Oct 1 2019 Manuel Hutter <manuel@vshn.ch> 0.18.13-1
 - check_openshift_node:
   - Also check DiskPressure and MemoryPressure.
 
